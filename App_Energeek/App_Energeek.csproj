@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\EmptyClass.cs" />
+    <Compile Remove="Controllers\EmptyClass.cs" />
+    <Compile Remove="Models\AllModels.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Connect\login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Connect\" />
+    <Folder Include="Views\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\API_Energeek\API_Energeek.csproj" />
+  </ItemGroup>
+</Project>
