@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Bienvenue sur Energeek</h1>
+<div>
+    <h2>Votre installation</h2>
+
+    @model List<App_Energeek.Models.Product>
+    @foreach (var element in Model)
+    {
+        <p>@Html.DisplayFor(m => element)</p>
+    }
+</div>
+
+
+
+<div class="text-danger">@ViewBag.Message</div>
+
+@Html.Partial("Product", new Product())
+
+@if (@ViewBag.Message != null)
+{
+    <script type="text/javascript">
+            $(function () {
+                alert("@ViewBag.Message")
+            });
+    </script>
+}

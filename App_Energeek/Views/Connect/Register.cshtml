@@ -1,0 +1,52 @@
+﻿@model App_Energeek.Models.Register
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+<link rel="stylesheet" href="~/Content/Logincss.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<div class="register-container">
+    <section class="register" id="register">
+        <header>
+            <h2>Energeek</h2>
+            <h4>Register</h4>
+        </header>
+        @using (@Html.BeginForm(null, null, FormMethod.Post, new { @class = "register-form" }))
+
+        {@Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+        @Html.TextBoxFor(m => m.userName, new { @class = "register-input", placeholder = "user name" })
+
+        @Html.TextBoxFor(m => m.firstName, new { @class = "register-input", placeholder = "first name" })
+        @Html.TextBoxFor(m => m.lastName, new { @class = "register-input", placeholder = "last name" })
+        @Html.TextBoxFor(m => m.email, new { @class = "register-input", placeholder = "mail" })
+
+
+
+        @Html.PasswordFor(m => m.password, new { @class = "register-input", placeholder = "Password" })
+
+
+
+
+
+        <div class="text-danger">@ViewBag.Message</div>
+
+        <div class="submit-container">
+            <button type="submit" class="login-button">REGISTER</button>
+        </div>
+    }
+    </section>
+</div>
+
+
+@if (@ViewBag.Message != null)
+{
+    <script type="text/javascript">
+            $(function () {
+                alert("@ViewBag.Message")
+            });
+    </script>
+}

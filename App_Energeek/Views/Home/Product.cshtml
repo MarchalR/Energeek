@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Product";
+}
+
+<h2>Ajouter un produit</h2>
+
+@model Product
+@using (@Html.BeginForm(null, null, FormMethod.Post, new { @class = "addProduct-form" }))
+
+{@Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+@Html.TextBoxFor(m => m.Name, new { @class = "addProduct-input", placeholder = "name" })
+
+@Html.TextBoxFor(m => m.Kwh_yr, new { @class = "addProduct-input", placeholder = "KWH/an" })
+    <p>Génère de l'electricité :</p>
+@Html.RadioButtonFor(m => m.Generating, "true", new { @class = "addProduct-input", placeholder = "last name" })
+
+
+
+
+
+
+
+
+<div class="submit-container">
+    <button type="submit" class="login-button">Ajouter</button>
+</div>
+}
