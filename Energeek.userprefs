@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{5B21A952-1DF2-4E35-B379-1F2E321DDA12}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="API_Energeek/Startup.cs">
+    <Files>
+      <File FileName="API_Energeek/Startup.cs" Line="20" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="Energeek" expanded="True">
+            <Node name="API_Energeek" expanded="True">
+              <Node name="API_Energeek" expanded="True">
+                <Node name="API_Energeek.Startup" selected="True" />
+              </Node>
+            </Node>
+            <Node name="App_Energeek" expanded="True">
+              <Node name="App_Energeek" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.App__Energeek PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
